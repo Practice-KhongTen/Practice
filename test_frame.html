@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        body {
+            font-family:monospace;
+            display: flex;
+            background-position: center;
+            align-items: center;
+            flex-direction: column;
+            background-attachment: local;
+            background-size: cover;
+            text-align: justify;
+            /* background-color: #C3F9FC; */
+            color: black;
+            
+        }
+
+        input {
+            border: 1px solid blue;
+            margin: 20px 0px;
+            border-radius: 0%;
+            min-width: 100px;
+            margin-left: 0%;
+            font-weight: bold;
+        }
+
+        a {
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5%;
+            color: black;
+            text-align: justify;
+            padding: 0px 5px 10px 0px;
+        }
+
+        a:hover {
+            text-decoration: none;
+
+        }
+
+        h1 {
+            color: blue;
+            font-size: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: center;
+            word-spacing: 20px;
+        }
+
+        img {
+            margin: 10px 0px;
+            width: 100%;
+            min-height: 200px;
+            max-width: 500px;
+        }
+
+        iframe {
+            border: none;
+        }
+
+        iframe:hover {
+           border: 1px solid rgb(170, 218, 255); 
+        }
+
+        fieldset {
+            max-width: 85%;
+        }
+        fieldset ul li{
+           min-width: 100%;
+           min-height: 150px;
+           float: left
+        }
+         fieldset ul li a{
+           min-height: 150px;
+           float: left
+        }
+        .icon1 i {
+            border: 1px solid blue;
+            border-radius: 30%;
+            background: white;
+            margin: 0px 5px;
+            justify-content: center;
+            align-items: center;
+            display: inline-flex;
+            min-width: 30px;
+            min-height: 30px;
+        }
+
+        .icon1 {
+            margin-left: 0%;
+            padding-top: 30px;
+        }
+
+
+
+        .col-sm-3,
+        .col-sm-2 {
+            text-transform: uppercase;
+            font-family:'Courier New', Courier, monospace;
+            letter-spacing: 2px;   
+        }
+        .col-sm-3 a {
+            border: none
+        }
+        .col-sm-2 a{
+            border: none   
+        }
+        .col-sm-3:hover .sub-menu {
+            display: table;
+            margin-top: 0px;
+            height: 400px;
+            z-index: 3;
+            background-color: white;
+            border-top: 1px solid black;
+            max-width: 100px;
+
+        }
+
+        .col-sm-2:hover .sub-menu {
+            display: block;
+            margin-top: 0px;
+            z-index: 3;
+            background-color: white;
+            border-top: 1px solid black;
+            max-width: 110px;
+            margin-left: 0px;
+        }
+
+        footer {
+            width: 100%;
+            height: 100%;
+            background: black;
+            font-weight: bold;
+           
+        }
+
+        span {
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            height: 150px;
+            color: white;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+
+        .sub-menu {
+            margin-left: -20px;
+            display: none;
+            position: absolute;
+
+        }
+
+        .sub-menu li:hover a {
+
+            text-align: center;
+            color: red;
+            text-align: justify;
+            border-bottom: 1px solid green;
+        }
+
+        .sub-menu li .a1 {
+            border:none
+        }
+        .sub-menu li:hover .a1 {
+            border:none
+        }
+
+        li {
+            list-style-type: none;
+            margin: 20px 0px;
+            text-align: justify;
+            float: left
+        }
+
+        .col-md-3 {
+            margin-top: 4em;
+
+        }
+
+        .col-md-1 {
+            margin-top: 5.5em;
+
+        }
+
+        .col-md-4,
+        .col-sm-6 {
+            padding-top: 35px;
+            text-align: center;
+        }
+        .col-sm-5 a {
+            padding-top: 10px;
+            margin: 10px 10px;
+            line-height: 30px;
+            border: 1px solid white;
+            border-radius: 5%;
+            color: white;
+        }
+
+        .col-sm-5 {
+            margin-top: 100px
+        }
+        .bot:hover{
+            background: white;
+            color:black;
+           
+        }
+        .text {
+            position: absolute;
+            top:25em;
+            font-family: 'Courier New', Courier, monospace;
+            text-shadow:2px 2px 8px black;
+            text-transform: capitalize;
+            color: white;
+            
+        }
+
+        .col-md-2 p {
+            float: right
+        }
+
+        /* @media only screen and (max-width: 320px) { */
+        /* iphone 5 */
+        /* .col-md-2 {
+    margin-top:10em;
+  }
+} */
+        /* @media only screen and (max-width: 360px) { */
+        /* GAlaxy s5 */
+        /* .col-md-2 {
+    margin-top:-8em;
+  }
+} */
+        /* @media only screen and (max-width: 375px) { */
+        /* [6,7,8] */
+        /* .col-md-2 {
+    padding-top:-800px;
+  }
+} */
+        /* @media only screen and (max-width: 768px) { */
+        /* ipad */
+        /* .col-md-2 {
+    margin-top:-8em;
+  } */
+
+        /* }
+  @media only screen and (max-width: 1024px) { */
+        /* ipad pro */
+        /* .col-md-2 {
+    margin-top:8.5em;
+  }
+   .col-md-1 {
+    margin-top:10em;
+  }
+}   */
+
+    </style>
+</head>
+
+<body>
+<!-- icon web -->
+    <div class="container-fluid "
+        style="border-bottom:1px solid rgb(235, 177, 136); background: white;max-height: 100px;">
+        <a href="#" style="border:none;">
+
+            <img src="https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG?fbclid=IwAR2mOujafWKK2M2FLBhKCKxY0NfqmrhgGxZKDIQ6M1hdolfQt8cwosZqMZQ"
+                style="width:150px;min-height:70px;float:left; margin:10px 10px 10px 10px" />
+            <!--icon web -->
+
+        </a>
+        <!-- Menu -->
+        <div class="container">
+            <ul class="row">
+
+                <li class="col-sm-3"><a href="#">Trang chủ</a></li>
+                <li class="col-sm-3"><a href="#">Chủ đề</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">1xYx</a></li>
+                        <li><a href="#">2xXx</a></li>
+                        <li><a href="#">3xXx</a></li>
+                        <li><a href="#">4xYx</a></li>
+                        <li><a href="#">5xXx</a></li>
+                        <li><a href="#">6xYx</a></li>
+                    </ul>
+                </li>
+                <li class="col-sm-2"><a href="#">Liên hệ</a></li>
+                <li class="col-sm-2"><a href="#">Tìm kiếm</a></li>
+                <li class="col-sm-2"><a href="#">Tài khoản</a>
+                    <ul class="sub-menu">
+                        <li><a href="http://www.google.com" class="a1">Đăng nhập</a></li>
+                        <li><a href="http:///www.festivals.com" class="a1">Đăng kí</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Thân trang web -->
+    <div class="container" style=" justify-content:left;margin-top:150px;min-width: 1500px;">
+
+            <p>Tên lễ hôi<br>
+                Địa điểm nổi bật<br>
+                ngày/ tháng/ 2020 - ngày/ tháng/ 2020
+            </p>
+                <img src="https://media.vietravel.net/Images/NewsPicture/tet-festival-02012020_2.JPG" title="Lễ tết 2020"
+                    style="min-width: 100%;" />
+                    <p class="text"> 
+                        <font size="12">Tên lễ hôi <br>
+                        Địa điểm nổi bật<br>
+                        01/ 01/ 2020 - 01/ 01/ 2020 
+                        </font>
+                    </p>
+    </div>
+    <div class= "container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6" style="text-align: left;min-width: 50%;margin-top: 5px; ">
+                <div class="container" style="align-items: center;flex-direction: column;">
+                  <!-- <img src="https://media.vietravel.net/Images/NewsPicture/tet-festival-02012020_2.JPG"
+                    title="Lễ tết 2020" style="min-width:100%;" /> -->
+                 <h1 style="text-align: left;">Tên lễ hội</h1>
+                    <p>Lễ hội diễn ra vào ngày 10 tháng 3 âm lịch, tuy nhiên, lễ hội thực chất đã diễn ra từ hàng tuần trước đó với những phong
+                    tục như đâm đuống (đánh trống đồng) của dân tộc Mường, hành hương tưởng niệm các vua Hùng, và kết thúc vào ngày 10 tháng
+                    3 âm lịch với lễ rước kiệu và dâng hương trên đền Thượng. Lễ hội đền Hùng hiện được Nhà nước Cộng hòa Xã hội chủ nghĩa
+                  Việt Nam nâng lên thành giỗ quốc Tổ tổ chức lớn vào những năm chẵn.
+                
+                 Có 2 lễ được cử hành cùng thời điểm ngày chính hội:
+                
+                  Lễ rước kiệu vua: Đám rước kiệu, nhiều màu sắc của rất nhiều cờ, hoa, lọng, kiệu, trang phục truyền thống xuất phát từ
+                 dưới chân núi rồi lần lượt qua các đền để tới đền Thượng, nơi làm lễ dâng hương.
+                
+                  Lễ dâng hương: Người hành hương tới đền Hùng chủ yếu vì nhu cầu của đời sống tâm linh. Mỗi người đều thắp lên vài nén
+                  hương khi tới đất Tổ để nhờ làn khói thơm nói hộ những điều tâm niệm của mình với tổ tiên. Theo quan niệm của người
+                 Việt, mỗi nắm đất, gốc cây nơi đây đều linh thiêng và những gốc cây, hốc đá cắm đỏ những chân hương.
+                
+                 Phần hội có nhiều trò chơi dân gian. Đó là những cuộc thi hát xoan (tức hát ghẹo), một hình thức dân ca đặc biệt của Phú
+                 Thọ, những cuộc thi vật, thi kéo co, hay thi bơi trải ở ngã ba sông Bạch Hạc, nơi các vua Hùng luyện tập các đoàn thủy
+                  binh luyện chiến.</p>
+
+                    <img src="http://www.baobinhthuan.com.vn/data/news/2020/1/123719/tung.jpg" style="min-width: 100%;" />
+                  <p style="text-align: center; color: blue">text liên quan đến ảnh...</p>
+                 <p>Đoàn đại biểu tỉnh Hưng Yên do Bí thư Tỉnh ủy, Chủ tịch HĐND tỉnh Đỗ Tiến Sỹ dẫn đầu thành kính dâng lên vua Hùng mâm lễ
+                 vật: Xôi và gà Đông Tảo, bánh chưng, bánh dày, long nhãn, hạt sen đặc sản phố Hiến và cung tiến phiên bản Trống đồng
+                 Động Xá, thuộc văn hóa Đông Sơn.
+                
+                 Đoàn đại biểu tỉnh Bình Thuận do Bí thư Tỉnh ủy, Chủ tịch HĐND tỉnh Nguyễn Mạnh Hùng dẫn đầu dâng lễ vật lên tổ tiên
+                    gồm: Thanh long, mủ trôm, bánh rế, cốm, thanh long sấy...
+                    
+                    Các đoàn đã kính cáo với tổ tiên những thành tựu về phát triển kinh tế - xã hội của địa phương; nguyện một lòng đoàn
+                    kết, xây dựng tỉnh nhà nói riêng và đất nước nói chung ngày càng vững mạnh, hùng cường.
+                
+                 Sau khi dâng hương, hoa, lễ vật tại đền Thượng, đoàn đại biểu các tỉnh đã dâng hương, hoa tại lăng Hùng Vương, thắp
+                    hương tại Đền Quốc tổ Lạc Long Quân và đền Mẫu Âu Cơ trong Khu di tích lịch sử Đền Hùng.</p><br>
+                    <p><b>Trang web lễ hội chính thức:</b>
+                    <a href="#" style="color: red">http://www.hoivuahung.com</a>
+                     </p>
+                </div>
+            </div>
+                     <!--right -->
+
+            <div class="col-md-4 col-sm-6" style="text-align:justify;max-width:40%;float:left">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.3140994742903!2d106.70347615047973!3d10.787237661905769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f4b61ebdf57%3A0xf4760e221c15bd73!2zxJDhu4FuIHRo4budIFZ1YSBIw7luZw!5e0!3m2!1svi!2s!4v1578851946303!5m2!1svi!2s"
+                min-width="100%" height="450" frameborder="0" allowfullscreen>
+            </iframe>
+            <!-- Dưới bản đồ ===> nội dung khác liên quan đến lễ hội  -->
+            <fieldset>
+                <h3>Bài viết liên quan</h3>
+                    <ul>
+                        <li style=" float:left">
+                            
+                            <a href="#"><img src="http://www.baobinhthuan.com.vn/data/news/2020/1/123719/tung.jpg" style="min-width: 100%;" />
+                                 ndung...</a>  <!-- chú ý k quá dài và cuối phải có dấu "..."-->
+                        </li>
+                        <li style=" float:left">
+                        
+                            <a href="#"><img src="http://www.baobinhthuan.com.vn/data/news/2020/1/123719/tung.jpg" style="min-width: 100%;" />
+                                text...</a>
+                        </li>
+                        <li style=" float:left">
+                        
+                            <a href="#"><img src="http://www.baobinhthuan.com.vn/data/news/2020/1/123719/tung.jpg" style="min-width: 100%;" />
+                                text...</a>
+                        </li>
+                        <li style=" float:left">
+                        
+                            <a href="#"><img src="http://www.baobinhthuan.com.vn/data/news/2020/1/123719/tung.jpg" style="min-width: 100%;" />
+                                text...</a>
+                        </li>
+                        <li style=" float:left">
+                        
+                            <a href="#"><img src="http://www.baobinhthuan.com.vn/data/news/2020/1/123719/tung.jpg" style="min-width: 100%;" />
+                                text...</a>
+                        </li>
+                    </ul>
+            </fieldset>
+        </div>
+
+    </div>
+    </div>
+    <!-- End -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row" style="align-items: center;flex-direction:row;color:white;">
+
+                <div class="col-md-4 col-sm-5" style="overflow: auto;max-width: 500px;border-right:1px solid white">
+                    <p style="float:left">Địa Chỉ: Số 8 Tôn Thất Thuyết - Mỹ Đình - Hà Nội</p>
+                    <!-- <div class="container-fluid" style="justify-content: center; border:1px solid white"> -->
+
+                    <img src="https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG?fbclid=IwAR2mOujafWKK2M2FLBhKCKxY0NfqmrhgGxZKDIQ6M1hdolfQt8cwosZqMZQ"
+                        style="min-width:200px; min-height:100px; background-color: #ffffff; border-radius: 100%; padding-left: 20px" />
+                    <!-- </div> -->
+                </div>
+                <div class="col-md-6 col-sm-5" style="border-right:1px solid white">
+                    <ul>
+                        <li><a href="#" class="bot">Cổ truyền</a></li>
+                        <li><a href="#" class="bot">Thể thao</a></li>
+                        <li><a href="#" class="bot">Ánh sáng</a></li>
+                        <li><a href="#" class="bot">Âm nhạc</a></li>
+                        <li><a href="#" class="bot">Phật giáo</a></li>
+                        <li><a href="#" class="bot">Thiên Chúa giáo</a></li>
+                        <li><a href="#" class="bot">Hiện đại</a></li>
+                        <li><a href="#" class="bot">Công nghệ</a></li>
+                        <li><a href="#" class="bot">Thời trang</a></li>
+                        <li><a href="#" class="bot">Khác</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-2" style="float: right;">
+                    <p>face, g+</p>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <!-- <div class="row">
+        <div class="col-md-12 col-sm-12" style="color: #ffffff"> -->
+                <span style="text-align: center;">Cảm ơn các bạn đã ủng hộ trang web của chúng tôi, hãy đến và tận hưởng
+                    hương vị lễ hội Việt
+                    Nam ngay thôi</span>
+            </div>
+            <!-- </div> -->
+
+        </div>
+    <footer>
+ 
+</body>
+
+</html>
