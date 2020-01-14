@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
+  <style>
+    body {
+      font-family:monospace;
+      display: flex;
+      background-position: center;
+      align-items: center;
+      flex-direction: column;
+      background-attachment: local;
+      background-size: cover;
+      text-align: justify;
+      /* background-color: #C3F9FC; */
+      color: black
+    }
+
+    input {
+      border: 1px solid blue;
+      margin: 20px 0px;
+      border-radius: 0%;
+      min-width: 100px;
+      margin-left: 0%;
+      font-weight: bold;
+    }
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      border-radius: 5%;
+      color: black;
+      text-align:justify;
+      padding: 0px 5px 5px 0px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    h1 {
+      color: blue;
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+      word-spacing: 20px;
+    }
+
+    img {
+      margin: 10px 0px;
+      width: 100%;
+      min-height: 10px;
+      max-width: 500px;
+      min-width: 10px;
+    }
+
+    .col-sm-3,
+    .col-sm-2 {
+            text-transform: uppercase;
+            font-family:'Courier New', Courier, monospace;
+            letter-spacing: 2px;   
+        }
+    .col-sm-3 a {
+            border: none
+        }
+    .col-sm-2 a{
+            border: none   
+        }
+    .col-sm-3:hover .sub-menu {
+            display: table;
+            margin-top: 0px;
+            height: 400px;
+            z-index: 3;
+            background-color: white;
+            border-top: 1px solid black;
+            max-width: 100px;
+
+        }
+
+     .col-sm-2:hover .sub-menu {
+            display: block;
+            margin-top: 0px;
+            z-index: 3;
+            background-color: white;
+            border-top: 1px solid black;
+            max-width: 110px;
+            margin-left: 0px;
+        }
+
+    footer {
+      width: 100%;
+      height: 100%;
+      background: black;
+      font-weight: bold;
+
+    }
+
+    span {
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+      height: 150px;
+      color: white;
+    }
+
+    .sub-menu{
+    margin-left: -35px;
+    display: none;
+    position: absolute;
+    letter-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+  
+  }
+
+   .sub-menu li a{
+    font-weight: normal;
+    width: 130px;
+    float: left;
+    margin:0px 0px -30px -30px
+        }
+
+  .sub-menu li:hover a {
+
+            text-align: center;
+            color: red;
+            text-align: justify;
+            border-bottom: 1px solid green;
+           
+        }
+/* 
+    .sub-menu li .a1 {
+          
+            
+        } */
+        .sub-menu li:hover .a1 {
+            
+            border-bottom: 1px solid green;
+        }
+    .bot:hover {
+      background-color: #ffffff;
+      color: black
+    }
+
+    li {
+      list-style-type: none;
+      margin:20px 0px;
+      text-align:justify;
+      float:left
+    }
+    .col-md-3 {
+      margin-top:4em;
+    
+    }
+     .col-md-1 {
+    margin-top:5.5em;
+
+  }
+  
+    .col-md-4,
+    .col-sm-6 {
+      padding-top: 35px;
+      text-align: center;
+    }
+
+    
+    .col-sm-5 a{
+      padding-top:10px;
+      margin:10px 10px;
+      line-height: 30px;
+    
+      /* overflow: auto; */
+     
+      border:1px solid white;
+      border-radius: 5%;
+      color: white;
+      
+    }
+       .col-sm-5 {
+
+        margin-top:100px
+    }
+    .test {
+      color:black;
+    }
+
+      /* .col-md-6 ul li a:hover{
+      background-color: white;
+      color: black
+    } */
+    .col-md-2 p{
+      float:right
+    }
+      /* @media only screen and (max-width: 320px) { */
+      /* iphone 5 */
+  /* .col-md-2 {
+    margin-top:10em;
+  }
+} */
+    /* @media only screen and (max-width: 360px) { */
+      /* GAlaxy s5 */
+  /* .col-md-2 {
+    margin-top:-8em;
+  }
+} */
+ /* @media only screen and (max-width: 375px) { */
+   /* [6,7,8] */
+  /* .col-md-2 {
+    padding-top:-800px;
+  }
+} */
+ /* @media only screen and (max-width: 768px) { */
+   /* ipad */
+  /* .col-md-2 {
+    margin-top:-8em;
+  } */
+
+/* }
+  @media only screen and (max-width: 1024px) { */
+   /* ipad pro */
+ /* .col-md-2 {
+    margin-top:8.5em;
+  }
+   .col-md-1 {
+    margin-top:10em;
+  }
+}   */
+/* nav */
+.img {vertical-align: middle;
+max-width: 100%;
+height: 500px;
+
+}
+.imgl {
+  width: 40em;
+  height: 350px;
+  
+
+}
+.imgr {
+  width: 40em;
+  height: 350px;
+ 
+
+}
+/* Slideshow container */
+.slideshow {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+  z-index: 2;
+}
+.slideshow_left {
+  max-width: 300px;
+  float:left;
+  z-index: 1;
+  margin:-397px 0px 0px -300px;
+}
+.slideshow_right {
+  margin:-397px -100px 0px 0px;
+  max-width: 300px;
+  float:right;
+  z-index: 1;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  border-radius:10%
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color:white;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade_img {
+  -webkit-animation-name: fade_img;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade_img;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade_img {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade_img {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+  </style>
+</head>
+
+<body>
+<!--icon web -->
+  <div class="container-fluid " style="border-bottom:1px solid rgb(235, 177, 136); background: white;max-height: 100px;">
+    <a href="#" style="border:none;">
+  
+      <img
+        src="https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG?fbclid=IwAR2mOujafWKK2M2FLBhKCKxY0NfqmrhgGxZKDIQ6M1hdolfQt8cwosZqMZQ"
+        style="width:150px;min-height:70px;float:left; margin:10px 10px 10px 10px" />
+
+    </a>
+    <!-- Menu -->
+    <div class="container">
+      <ul class="row">
+  
+        <li class="col-sm-3"><a href="#">Trang chủ</a></li>
+        <li class="col-sm-3"><a href="#">Chủ đề</a>
+          <ul class="sub-menu">
+            <li><a href="#">
+                <i class="fas fa-music"></i>
+                Âm nhạc
+              </a></li>
+              <li><a href="#">
+                <i class="fas fa-sun"></i>
+                Ánh sáng</a></li>
+            <li><a href="#">
+                <i class="far fa-futbol"></i>
+                Thể thao
+            </a></li>
+            <li><a href="#">
+                <img src="https://pbs.twimg.com/profile_images/981401822039629825/kFVAahmY.jpg"
+                  style="max-width:20px;max-height:20px;width:20px; height: 20px;" />
+                Cổ truyền
+              </a>
+            </li>
+            
+            <li><a href="#">ngoài trời</a></li>
+            <li><a href="#">6xYx</a></li>
+          </ul>
+        </li>
+        <li class="col-sm-2"><a href="#">Liên hệ</a></li>
+        <li class="col-sm-2"><a href="#">Tìm kiếm</a></li>
+        <li class="col-sm-2"><a href="#">Tài khoản</a>
+          <ul class="sub-menu">
+            <li><a href="http://www.google.com" class="a1"><i class="fas fa-sign-in-alt" style="margin-right:5px"></i>Đăng nhập</a></li>
+            <li><a href="http:///www.festivals.com" class="a1"><i class="fas fa-user-plus" style="margin-right:5px"></i>Đăng kí</a></li>
+          </ul>
+        </li>
+  
+      </ul>
+    </div>
+  
+  </div>
+  <!-- Nav -->
+<div class="container">
+  <div class="slideshow">
+    <!-- img 1 -->
+    <div class="mySlides fade_img">
+
+      <img title="1"
+        src="https://www.phunuonline.com.vn/image/news/2019/20190930/fckimage/165960_photo-1-15639625284971568557444-291735670.jpg"
+        class="img" />
+
+    </div>
+    <!-- img 2 -->
+    <div class="mySlides fade_img">
+
+      <img title="2" src="https://i.ytimg.com/vi/j20zIf6Iykk/maxresdefault.jpg" class="img" />
+
+    </div>
+    <!-- img3 -->
+    <div title="3" class="mySlides fade_img">
+
+      <img src="https://baocantho.com.vn/image/fckeditor/upload/2019/20190914/images/3.jpg" class="img" />
+
+    </div>
+
+
+    <a class="prev" onclick="plusSlides(-1)" style="color: white; border: 1px solid white;">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)" style="color: white; border: 1px solid white;">&#10095;</a>
+
+  </div>
+  <!-- left img -->
+  <div class="slideshow_left">
+    <!-- img 1 -->
+    <div class="mySlidesl fade_img">
+
+      <img title="1" src=" https://i.ytimg.com/vi/j20zIf6Iykk/maxresdefault.jpg" class="imgl" />
+
+    </div>
+    <!-- img 2 -->
+    <div class="mySlidesl fade_img">
+
+      <img title="2" src=" https://baocantho.com.vn/image/fckeditor/upload/2019/20190914/images/3.jpg" class="imgl" />
+
+    </div>
+    <!-- img3 -->
+    <div class="mySlidesl fade_img">
+
+      <img title="3"
+        src=" https://www.phunuonline.com.vn/image/news/2019/20190930/fckimage/165960_photo-1-15639625284971568557444-291735670.jpg"
+        class="imgl" />
+
+    </div>
+
+
+  </div>
+  <!-- right img -->
+  <div class="slideshow_right">
+    <!-- img 1 -->
+    <div title="1" class="mySlidesr fade_img">
+
+      <img src=" https://baocantho.com.vn/image/fckeditor/upload/2019/20190914/images/3.jpg" class="imgr" />
+
+    </div>
+    <!-- img 2 -->
+    <div class="mySlidesr fade_img">
+
+      <img title="2"
+        src=" https://www.phunuonline.com.vn/image/news/2019/20190930/fckimage/165960_photo-1-15639625284971568557444-291735670.jpg "
+        class="imgr" />
+
+    </div>
+    <!-- img3 -->
+    <div class="mySlidesr fade_img">
+
+      <img title="3" src=" https://i.ytimg.com/vi/j20zIf6Iykk/maxresdefault.jpg" class="imgr" />
+
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</div>
+<!-- Thân trang web -->
+    <div class="row">
+      <div class=" col-lg-8 col-md-8 col-sm-12" style="text-align: center;min-width: 50%;margin-top: 5px;">
+
+        <!-- <b>Lễ hội chính se dc đặt 8 cột, hội phụ sẽ dc đặt 3 cột, còn 1 </b> -->
+        <p>Text</p>
+        <p><b>Nội dung chính 1</b></p>
+          <div class="container" style="align-items: center;flex-direction: column;">
+            <img src="https://media.vietravel.net/Images/NewsPicture/tet-festival-02012020_2.JPG"
+                title="Lễ tết 2020" style="max-width:100%;" /> 
+        <p><b>Nội dung chính 2</b></p>
+        
+        <img src="http://www.baobinhthuan.com.vn/data/news/2020/1/123719/tung.jpg" style="min-width: 100%;" /> <p style="text-align: center; color: blue">text liên quan đến bài...</p>
+        <img src="http://kienthucdulich.vn/images/hinh/3.jpg" style="min-width: 100%;" /><p style="text-align: center; color: blue">text liên quan đến bài...</p>
+      
+        </div>
+      </div>
+      <!--center -->
+
+        <div class=" col-lg-3 col-md-3 col-6" 
+        style="text-align:justify;max-width:40%;align-items: center;justify-content: center">
+      
+        <ul >
+          <li style="margin-left:-40px"><img src="http://dulichchuahuong.com/img/le-hoi-chua-huong-2.jpg" style=" min-width: 100%;" />
+            <p >text.1...</p></li>
+          <li style="margin-left:-40px"><img src="https://vanhoa.evn.com.vn/userfile/User/huyent_tcdl/images/2018/2/lehoianhsang.jpg" style="min-width: 100%;" />
+            <p >text.2...</p></li>
+          <li style="margin-left:-40px"><img src="https://images.foody.vn/images/2(1890).jpg" style=" min-width: 100%;" />
+            <p >text.3...</p></li>
+        </ul>
+      </div>
+      
+      <!-- Right -->
+       <div class="col-lg-1 col-md-1 col-6"
+        style="text-align: justify;max-width:10%;justify-content:right;flex-direction: column;align-items: center;color:black">
+       Anh yeu em nhat ma
+       </div>
+     
+    </div>
+  </div>
+<!-- End -->
+  <footer class="container-fluid">
+    <div class="container">
+      <div class="row" style="align-items: center;flex-direction:row;color:white;">
+
+        <div class="col-md-4 col-sm-5" style="overflow: auto;max-width: 500px;border-right:1px solid white">
+          <p style="float:left">Địa Chỉ: Số 8 Tôn Thất Thuyết - Mỹ Đình - Hà Nội</p> 
+            <!-- <div class="container-fluid" style="justify-content: center; border:1px solid white"> -->
+              
+            <img  src="https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG?fbclid=IwAR2mOujafWKK2M2FLBhKCKxY0NfqmrhgGxZKDIQ6M1hdolfQt8cwosZqMZQ"
+              style="min-width:200px; min-height:100px; background-color: #ffffff; border-radius: 100%; padding-left: 20px" />
+        <!-- </div> -->
+        </div>
+     <div class="col-md-6 col-sm-5" style="border-right:1px solid white" >
+        <ul>
+
+          <li><a href="#" class="bot">Cổ truyền</a></li>
+          <li><a href="#" class="bot">Thể thao</a></li>
+          <li><a href="#" class="bot">Ánh sáng</a></li>
+          <li><a href="#" class="bot">Âm nhạc</a></li>
+          <li><a href="#" class="bot">Phật giáo</a></li>
+          <li><a href="#" class="bot">Thiên Chúa giáo</a></li>
+          <li><a href="#" class="bot">Hiện đại</a></li>
+          <li><a href="#" class="bot">Công nghệ</a></li>
+          <li><a href="#" class="bot">Thời trang</a></li>
+          <li><a href="#" class="bot">Khác</a></li>
+        </ul>
+        </div>
+        <div class="col-md-2 col-sm-2" style="float: right;">
+          <p>face, g+</p>
+        </div>
+        
+      </div>
+ 
+    <div class="container">
+      <!-- <div class="row">
+        <div class="col-md-12 col-sm-12" style="color: #ffffff"> -->
+          <span style="text-align: center;">Cảm ơn các bạn đã ủng hộ trang web của chúng tôi, hãy đến và tận hưởng hương vị lễ hội Việt
+            Nam ngay thôi</span>
+          </div>
+      <!-- </div> -->
+   
+    </div>
+  </footer>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var dots = document.getElementsByClassName("dot");
+
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
+    // l
+    var slidesl = document.getElementsByClassName("mySlidesl");
+    if (n > slidesl.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slidesl.length }
+    for (i = 0; i < slidesl.length; i++) {
+      slidesl[i].style.display = "none";
+    }
+    slidesl[slideIndex - 1].style.display = "block";
+    //r
+    var slidesr = document.getElementsByClassName("mySlidesr");
+    if (n > slidesr.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slidesr.length }
+    for (i = 0; i < slidesr.length; i++) {
+      slidesr[i].style.display = "none";
+    }
+    slidesr[slideIndex - 1].style.display = "block";
+    //
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    dots[slideIndex - 1].className += " active";
+  }
+</script>
+</body>
+
+</html>
