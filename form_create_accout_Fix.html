@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <style>
+    body, html{
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      background-position: center;
+      align-items:center;
+      flex-direction:column;
+      background-attachment: local;
+      background-size: cover;
+      text-align: center;
+      height: 100%;
+      width: 100%;
+    }
+    * {
+      box-sizing: border-box;
+    }
+
+    .bg-image{
+      position: absolute;
+      background-image: url("15544614194776402992.jpg");
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      height: 150%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+    }
+    @media screen and (max-width: 575px) {
+      .bg-image {
+        position: absolute;
+        background-image: url("15544614194776402992.jpg");
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 200px 100px;
+        z-index: -1;
+      }
+    }
+    @media screen and (max-width: 767px) {
+      .bg-image {
+        position: absolute;
+        background-image: url("15544614194776402992.jpg");
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 250px 100px;
+        /* background-size: cover; */
+        z-index: -1;
+      }
+    }
+
+    @media screen and (max-width: 991px) {
+      .bg-image {
+        position: absolute;
+        background-image: url("15544614194776402992.jpg");
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+    @media screen and (max-width: 1199px) {
+      .bg-image {
+        position: absolute;
+        background-image: url("15544614194776402992.jpg");
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: -1;
+      }
+    }
+
+    input{
+      border:1px solid blue;
+      margin:20px 0px;
+      border-radius: 0%;
+      min-width:100px;
+      margin-left:0%;
+      font-weight: bold;
+    }
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      /* margin: 10px 0px; */
+      border: none;
+      border-radius: 5%;
+      color: rgb(235, 177, 136);
+      text-align:justify;
+      padding: 0px 5px 10px 0px;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    h1{
+      color: blue;
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+      word-spacing: 20px;
+    }
+    .container1{
+      margin-top: 300px;
+      margin-bottom: 10%;
+      border: 1px solid blue;
+      border-radius: 5%;
+      width:400px;
+      max-width: 100%;
+      min-height: 480px;
+      background-color: #ffffff;
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0, 0.4);
+      z-index: 2;
+      border: 3px solid #f1f1f1;
+    }
+
+   .icon1 i{
+     border:1px solid blue;
+     border-radius: 30%;
+     background: white;
+     margin:0px 5px;
+     justify-content: center;
+     align-items:center;
+     display: inline-flex;
+     min-width: 30px;
+     min-height: 30px;
+   }
+
+    .icon1{
+      margin-left: 0%;
+      padding-top:30px;
+    }
+
+    .form_left{
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+      margin-top: 0%;
+      z-index: 2;
+    }
+
+    .frame{
+      position: absolute;
+      top:-10%;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header{
+      min-height: 40px;
+      min-width: 400px;
+      width:100%;
+      height: 30px;
+      position: fixed;
+      background-color: white;
+      display:table;
+      border-bottom: 1px solid rgb(235, 177, 136);
+      z-index: 3;
+    }
+    .logo{
+      width:150px;
+      height:100px;
+      background-color: #ffffff;
+      border-radius: 100%;
+      padding: 20px;
+      margin-bottom: 35px;
+    }
+
+    .col-sm-3,
+    .col-sm-2{
+      text-transform: uppercase;
+    }
+
+    .col-sm-3:hover .sub-menu{
+      display: block;
+      margin-top:20px;
+      position:relative;
+      z-index: 3;
+      background-color: white;
+      border-top:1px solid black;
+      max-width: 130px;
+    }
+    .col-sm-2:hover .sub-menu{
+      display: block;
+      margin-top:10px;
+      position:relative;
+      z-index: 3;
+      background-color: white;
+      border-top:1px solid black;
+      max-width: 110px;
+      margin-left: 0px;
+    }
+    .test {
+      color:black;
+    }
+    .sub-menu{
+      margin-left: -35px;
+      display: none;
+      position: absolute;
+    }
+
+     .sub-menu li:hover .a1{
+
+         text-align:center ;
+          color: red;
+         text-align: justify;
+          border-bottom: 1px solid green;
+      }
+
+      li {
+        list-style-type: none;
+        margin:20px 0px;
+        text-align:justify;
+      }
+      .col-md-3 {
+        padding-top:8.5em;
+        float:left
+      }
+       .col-md-1 {
+      margin-top:10em;
+    }
+
+      .col-md-4,
+      .col-sm-6 {
+        padding-top: 35px;
+        text-align: center;
+      }
+
+      .col-md-7,
+      .col-sm-5 {
+        margin-left: 10px;
+        line-height: 40px;
+        text-align: center;
+        overflow: auto;
+        float:left
+      }
+
+    footer{
+      width:100%;
+      height: 100%;
+      background: black;
+      display:block;
+      font-weight: bold;
+      z-index: 1;
+    }
+
+    span{
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      width:100%;
+      height: 150px;
+      color:white;
+    }
+
+    .col-md-4, .col-sm-6{
+      padding-top: 35px;
+      text-align: center;
+    }
+
+    .col-md-7, .col-sm-5{
+      margin-left: 10px;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    .bot{
+      color: #ffffff;
+      background-color: black;
+      padding: 5px;
+    }
+
+    .bot:hover{
+      color: black;
+      background-color: #ffffff
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid " style="border-bottom:1px solid rgb(235, 177, 136); background: white;max-height: 100px;">
+    <a href="#" style="border:none;">
+
+      <img src="https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG?fbclid=IwAR2mOujafWKK2M2FLBhKCKxY0NfqmrhgGxZKDIQ6M1hdolfQt8cwosZqMZQ"
+        style="width:150px;min-height:70px;float:left; margin:10px 10px 10px 10px" /> <!--icon web -->
+
+    </a>
+    <!-- Menu -->
+     <div class="container">
+        <ul class="row">
+
+        <li class="col-sm-3"><a href="#" class="test">Trang chủ</a></li>
+        <li class="col-sm-3"><a href="#"  class="test">Chủ đề</a>
+          <ul class="sub-menu">
+            <li ><a href="#" class="a1">1xYx</a></li>
+            <li ><a href="#" class="a1">2xXx</a></li>
+            <li ><a href="#" class="a1">3xXx</a></li>
+            <li ><a href="#" class="a1">4xYx</a></li>
+            <li ><a href="#" class="a1">5xXx</a></li>
+            <li ><a href="#" class="a1">6xYx</a></li>
+          </ul>
+        </li>
+          <li class="col-sm-2"><a href="#"  class="test" >Liên hệ</a></li>
+          <li class="col-sm-2"><a href="#"  class="test" >Tìm kiếm</a></li>
+          <li class="col-sm-2"><a href="#"  class="test">Tài khoản</a>
+            <ul class="sub-menu">
+              <li ><a href="http://www.google.com" class="a1">Đăng nhập</a></li>
+              <li><a href="http:///www.festivals.com" class="a2">Đăng kí</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      </div>
+
+  </div>
+
+  <div class="bg-image"></div>
+  <div class="container container1">
+    <h1>Tạo Tài Khoản</h1>
+    <div class="container">
+      <div class="icon1">
+        <a href="#" style="border:none;float:none;color:blue;"><i class="fab fa-facebook-f" style="width:20px;"></i></a>
+        <a href="#" style="border:none;float:none;color:red;"><i class="fab fa-google-plus-g" style="width:20px;"></i></a>
+      </div>
+      <form class="form_left">
+        <div class="container-fluid"><img src="http://www.icone-png.com/png/28/28420.png" style="width: 20px;"/>
+        <input style="border-radius: 3px; padding-left: 10px" type="text" placeholder="Tên" required  title="Vui lòng nhập tên của bạn"/></div>
+        <div class="container-fluid"><img src="http://www.icone-png.com/png/28/28420.png" style="width: 20px;">
+        <input style="border-radius: 3px; padding-left: 10px" type="text" placeholder="Họ" title="Vui lòng nhập họ của bạn" /></div>
+        <div class="container-fluid"><img src="https://image.flaticon.com/icons/png/512/95/95645.png" style="width: 20px;" />
+        <input style="border-radius: 3px; padding-left: 10px" type="email" placeholder="Email" required /></div>
+        <div class="container-fluid"><img src="https://icons-for-free.com/iconfiles/png/512/open+password+icon-1320183290851596683.png" style="width: 20px;" />
+        <input style="border-radius: 3px; padding-left: 10px" type="password" placeholder="Mật khẩu" required></div>
+        <button value="Sign up" class="btn btn-primary btn-sm">Đăng kí</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row" style="align-items: center;flex-direction:row;color:white;">
+        <div class="col-md-4 col-sm-6"><p>Địa Chỉ: Số 8 Tôn Thất Thuyết - Mỹ Đình - Hà Nội</p>
+          <a href="#" style="border:none;">
+          <img src="https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG?fbclid=IwAR2mOujafWKK2M2FLBhKCKxY0NfqmrhgGxZKDIQ6M1hdolfQt8cwosZqMZQ"
+          class="logo"/></a>
+        </div>
+        <div class="col-md-7 col-sm-5">
+          <a href="#" class="bot">Cổ truyền</a>
+          <a href="#" class="bot">Thể thao</a>
+          <a href="#" class="bot">Ánh sáng</a>
+          <a href="#" class="bot">Âm nhạc</a>
+          <a href="#" class="bot">Phật giáo</a>
+          <a href="#" class="bot">Thiên Chúa giáo</a>
+          <a href="#" class="bot">Hiện đại</a>
+          <a href="#" class="bot">Công nghệ</a>
+          <a href="#" class="bot">Thời trang</a>
+          <a href="#" class="bot">Khác</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="container">
+          <div class="col-md-12 col-sm-12" style="color: #ffffff">
+          <span>Cảm ơn các bạn đã ủng hộ trang web của chúng tôi, hãy đến và tận hưởng hương vị lễ hội Việt Nam ngay thôi</span></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
