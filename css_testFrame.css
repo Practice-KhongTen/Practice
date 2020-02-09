@@ -1,0 +1,481 @@
+body {
+      font-family:'Courier New', Courier, monospace;
+      display: flex;
+      background-position: center;
+      align-items: center;
+      flex-direction: column;
+      background-attachment: local;
+      background-size: cover;
+      text-align: justify;
+      justify-content: center;
+      color: black
+    }
+
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      border: none;
+      border-radius: 5%;
+      color: black;
+      text-align:justify;
+      padding: 0px 5px 5px 0px;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: red
+    }
+    i {
+      margin-right: 5px
+    }
+    h1 {
+      color: blue;
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 20px;
+      text-align: center;
+      word-spacing: 20px;
+    }
+  .header {
+    border-bottom:1px solid rgb(235, 177, 136);
+     background: white;
+     max-height: auto;
+     max-width: auto
+  }
+  /* nav */
+    .navbar {
+      display: none;
+    }
+    .col-md-3 .carousel-inner .carousel-item img{
+      margin: 50% 0% 5% 0%;
+    }
+
+    .col-md-6 img{
+      max-width: 100%;
+      max-height: 100%;
+      min-width: 10%;
+      min-height: 10%;
+      width:100%
+    }
+
+    /* Footer */
+   footer {
+    width: 100%;
+    height: 100%;
+    background: black;
+    font-weight: bold;
+
+  }
+    .img_chinh {
+      width:100%
+    }
+    .img-fluid {
+
+      height: 200px;
+      min-height: 150px;
+
+      max-height: 300px;
+    }
+
+    .right {
+        text-align: justify;
+        max-width:100%;
+        justify-content:right;
+        flex-direction: column;
+        align-items: center;
+        color:black;
+        margin-left: 20px;
+    }
+    .right ul li a {
+      border:1px solid black;
+      text-align: center;
+      color: black;
+      font-weight: normal;
+      padding: 10px;
+      float:left;
+      margin-left: 5px;
+      width:100px'
+    }
+    .right ul li a:hover {
+      background-color: black;
+      text-align: center;
+      color: white;
+    }
+    .col-sm-3 {z-index: 2}
+    .col-sm-2 {z-index: 1;}
+    .col-sm-3,
+    .col-sm-2 {
+            text-transform: uppercase;
+            font-family:'Courier New', Courier, monospace;
+            letter-spacing: 2px;
+
+        }
+    .col-sm-3 a {
+            border: none
+        }
+    .col-sm-2 a{
+            border: none
+        }
+    .col-sm-3:hover .sub-menu {
+            display: table;
+            margin-top: 0px;
+            height: 400px;
+            z-index: 3;
+            background-color: white;
+            border-top: 1px solid black;
+            max-width: 100px;
+
+        }
+
+     .col-sm-2:hover .sub-menu {
+            display: block;
+            margin-top: 0px;
+            z-index: 3;
+            background-color: white;
+            border-top: 1px solid black;
+            max-width: 110px;
+            margin-left: 0px;
+        }
+
+
+
+    .sub-menu{
+    margin-left: -35px;
+    display: none;
+    position: absolute;
+    letter-spacing: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform:capitalize;
+    flex-direction: column;
+  }
+
+   .sub-menu li a{
+    font-weight: normal;
+    min-width: 130px;
+    max-width: 170;
+    width: 170px;
+    float: left;
+    margin:0px 0px -30px -10px;
+    position: relative;
+
+        }
+    .sub-menu li ul {
+      display: none;
+    }
+    .sub-menu li ul li:hover a{
+      color: white;
+      background-color: black;
+      border: 1px solid black;
+      max-width:50px
+    }
+
+
+
+    .sub-menu li:hover ul {
+      display: block;
+      z-index: 10;
+      color: red
+    }
+ .sub-menu li .a1{
+    font-weight: normal;
+    width: 130px;
+    margin-left:-40px;
+      }
+  .sub-menu li:hover a {
+      text-align: center;
+      color: red;
+      text-align: justify;
+
+        }
+
+  .sub-menu li:hover .a1 {
+          border-bottom: none
+        }
+    .bot:hover {
+      background-color: #ffffff;
+      color: black
+    }
+
+    li {
+      list-style-type: none;
+      margin:20px 0px;
+      text-align:justify;
+      float:left
+    }
+
+    .col-md-6 ul li a{
+      padding:10px;
+      margin:10px ;
+      line-height: 30px;
+      border:1px solid white;
+      border-radius: 5%;
+      color: white;
+
+    }
+
+    .col-md-2 p{
+      float:right
+    }
+
+
+
+.col-sm-5 {
+  overflow:hidden;
+  width: 500px;
+  border-right:1px solid white
+}
+.col-md-6 {
+  border-right:1px solid white
+}
+
+@media only screen and (max-width: 360px) {
+  /* GLX S5*/
+  body {
+    width:100%;
+    height: 100%
+  }
+  .col-md-3 {
+    none;
+  }
+
+  .col-sm-5, .col-md-4 {
+    min-width: 300px;
+    border: none
+  }
+  .container .row .col-lg-3, .col-lg-2{
+    display: none;
+  }
+  .navbar {
+    display: block;
+    margin-top:200px
+  }
+  .sub-menu01 {
+    display: none;
+    position: absolute;
+    max-width:210px;
+
+  }
+  .col-md-12:hover .sub-menu01 {
+    display:block;
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    color: red
+  }
+  .sub-menu01 li ul{
+    display: none;
+  }
+  .sub-menu01 li:hover ul{
+    display: block;
+  }
+}
+@media only screen and (max-width: 375px) {
+  /* GLX S5*/
+  body {
+    width:100%;
+    height: 100%
+  }
+  .col-md-3 {
+    none;
+  }
+
+  .col-sm-5, .col-md-4 {
+    min-width: 300px;
+    border: none
+  }
+  .container .row .col-lg-3, .col-lg-2{
+    display: none;
+  }
+  .navbar {
+    display: block;
+    margin-top:200px
+  }
+  .sub-menu01 {
+    display: none;
+    position: absolute;
+    max-width:210px;
+
+  }
+  .col-md-12:hover .sub-menu01 {
+    display:block;
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    color: red
+  }
+  .sub-menu01 li ul{
+    display: none;
+  }
+  .sub-menu01 li:hover ul{
+    display: block;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* GLX S5*/
+  body {
+    width:100%;
+    height: 100%
+  }
+  .col-md-3 {
+    none;
+  }
+
+  .col-sm-5, .col-md-4 {
+    min-width: 300px;
+    border: none
+  }
+  .container .row .col-lg-3, .col-lg-2{
+    display: none;
+  }
+  .navbar {
+    display: block;
+    margin-top:200px
+  }
+  .sub-menu01 {
+    display: none;
+    position: absolute;
+    max-width:210px;
+
+  }
+  .col-md-12:hover .sub-menu01 {
+    display:block;
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    color: red
+  }
+  .sub-menu01 li ul{
+    display: none;
+  }
+  .sub-menu01 li:hover ul{
+    display: block;
+  }
+}
+@media only screen and (max-width: 411px) {
+  /* GLX S5*/
+  body {
+    width:100%;
+    height: 100%
+  }
+  .col-md-3 {
+    none;
+  }
+
+  .col-sm-5, .col-md-4 {
+    min-width: 300px;
+    border: none
+  }
+  .container .row .col-lg-3, .col-lg-2{
+    display: none;
+  }
+  .navbar {
+    display: block;
+    margin-top:200px
+  }
+  .sub-menu01 {
+    display: none;
+    position: absolute;
+    max-width:210px;
+
+  }
+  .col-md-12:hover .sub-menu01 {
+    display:block;
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    color: red
+  }
+  .sub-menu01 li ul{
+    display: none;
+  }
+  .sub-menu01 li:hover ul{
+    display: block;
+  }
+}
+@media only screen and (max-width: 414px) {
+  /* GLX S5*/
+  body {
+    width:100%;
+    height: 100%
+  }
+  .col-md-3 {
+    none;
+  }
+
+  .col-sm-5, .col-md-4 {
+    min-width: 300px;
+    border: none
+  }
+  .container .row .col-lg-3, .col-lg-2{
+    display: none;
+  }
+  .navbar {
+    display: block;
+    margin-top:200px
+  }
+  .sub-menu01 {
+    display: none;
+    position: absolute;
+    max-width:210px;
+
+  }
+  .col-md-12:hover .sub-menu01 {
+    display:block;
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    color: red
+  }
+  .sub-menu01 li ul{
+    display: none;
+  }
+  .sub-menu01 li:hover ul{
+    display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* GLX S5*/
+  body {
+    width:100%;
+    height: 100%
+  }
+  .col-md-3 {
+    none;
+  }
+
+  .col-sm-5, .col-md-4 {
+    min-width: 300px;
+    border: none
+  }
+  .container .row .col-lg-3, .col-lg-2{
+    display: none;
+  }
+  .navbar {
+    display: block;
+    margin-top:200px
+  }
+  .sub-menu01 {
+    display: none;
+    position: absolute;
+    max-width:210px;
+
+  }
+  .col-md-12:hover .sub-menu01 {
+    display:block;
+    position: absolute;
+    background-color: white;
+    z-index: 20;
+    color: red
+  }
+  .sub-menu01 li ul{
+    display: none;
+  }
+  .sub-menu01 li:hover ul{
+    display: block;
+  }
+
+  .right {
+    width: 10%;
+
+  }
+}

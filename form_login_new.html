@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="css_form_login.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--icon web  -->
+  <div class="home">
+    <div class="container-fluid" style="" >
+      <a href="#" style="border:none;">
+
+        <img
+          src="https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG?fbclid=IwAR2mOujafWKK2M2FLBhKCKxY0NfqmrhgGxZKDIQ6M1hdolfQt8cwosZqMZQ"
+          style="width:150px;min-height:70px;float:left; margin:10px;" />
+      </a>
+      <!-- Menu -->
+      <div class="container">
+        <ul class="row">
+          <li class="col-lg-3 col-sm-3 col-12"><a href="#">Trang chủ</a></li>
+          <li class=" col-lg-3 col-sm-3 col-12 "><a href="#">Chủ đề</a>
+            <ul class="sub-menu" style="border:1px solid rgb(249, 249, 249);position: absolute; max-width:110px">
+              <li><a href="#">
+                  <i class="fas fa-music"></i>
+                  Âm nhạc
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-hamburger"></i>
+                    Ẩm thực
+                  </a></li>
+                <li><a href="#">
+                  <i class="fas fa-sun"></i>
+                  Ánh sáng
+                </a></li>
+                  <li><a href="#">
+                    <i class="fas fa-microchip"></i>
+                    Công nghệ
+                  </a></li>
+                    <li><a href="#">
+                        <i class="fas fa-torii-gate"></i>
+                        Cổ truyền
+                      </a></li>
+
+                  <li><a href="#">
+                    <i class="fas fa-cloud-sun"></i>
+                    ngoài trời
+                  </a></li>
+
+              <li><a href="#">
+                  <i class="far fa-futbol"></i>
+                  Thể thao
+                  </a>
+              </li>
+              <li><a href="#">
+                  <i class="fas fa-tshirt"></i>
+                  Thời trang
+              </a></li>
+              <li><a href="#">
+                  <i class="fas fa-paint-brush"></i>
+                  Vẽ
+                </a></li>
+              <li>
+                <a>
+                  <i class="fas fa-gift"></i>
+                  Theo ngày
+                  <ul>
+                    <li style="margin-top:30px"><a href=""><i class="fas fa-holly-berry"></i> Noel</a></li>
+                    <li><a href=""><i class="fas fa-ghost"></i>Helloween</a></li>
+                    <li><a href=""><i class="fas fa-grin-squint-tears"></i>1/4</a></li>
+                    <li><a href=""><i class="fas fa-hand-holding-heart"></i>Valentine</a></li>
+                  </ul>
+              </a>
+              </li>
+
+            </ul>
+          </li>
+          <li class="col-lg-2 col-sm-2 col-12"><a href="#">Liên hệ</a></li>
+          <li class="col-lg-2 col-sm-2 col-12"><a href="#">Tìm kiếm</a></li>
+          <li class="col-lg-2 col-sm-2 col-12"><a href="#">Tài khoản</a>
+            <ul class="sub-menu" style="border: 1px solid white">
+              <li><a href="http://www.google.com" class="a1"><i class="fas fa-sign-in-alt" style="margin-right:5px"></i>Đăng nhập</a></li>
+              <li><a href="http:///www.festivals.com" class="a1"><i class="fas fa-user-plus" style="margin-right:5px"></i>Đăng kí</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Menu Mobile -->
+
+          <nav class="navbar navbar-dark" style="background-color: #e3f2fd;color: black">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span><i class="fas fa-align-justify" style="color: red"></i></span>
+            </button>
+            <ul class="collapse navbar-collapse row" id="navbarToggleExternalContent">
+              <li class="col-md-12"><a href="#">Trang chủ</a></li>
+              <li class="col-md-12"><a href="#">Chủ đề</a>
+                <ul class="sub-menu01">
+                  <li><a href="#">
+                      <i class="fas fa-music"></i>
+                      Âm nhạc
+                    </a></li>
+                    <li><a href="#">
+                        <i class="fas fa-hamburger"></i>
+                        Ẩm thực
+                      </a></li>
+                    <li><a href="#">
+                      <i class="fas fa-sun"></i>
+                      Ánh sáng
+                    </a></li>
+                      <li><a href="#">
+                        <i class="fas fa-microchip"></i>
+                        Công nghệ
+                      </a></li>
+                        <li><a href="#">
+                            <i class="fas fa-torii-gate"></i>
+                            Cổ truyền
+                          </a></li>
+
+                      <li><a href="#">
+                        <i class="fas fa-cloud-sun"></i>
+                        ngoài trời
+                      </a></li>
+
+                  <li><a href="#">
+                      <i class="far fa-futbol"></i>
+                      Thể thao
+                      </a>
+                  </li>
+                  <li><a href="#">
+                      <i class="fas fa-tshirt"></i>
+                      Thời trang
+                  </a></li>
+                  <li><a href="#">
+                      <i class="fas fa-paint-brush"></i>
+                      Vẽ
+                    </a></li>
+                  <li>
+                    <a style="color: black">
+                      <i class="fas fa-gift"></i>
+                      Theo ngày
+                      <ul class="sub-menu001">
+                        <li style="margin-top:30px"><a href="#"><i class="fas fa-holly-berry"></i> Noel</a></li>
+                        <li><a href="#"><i class="fas fa-ghost"></i>Helloween</a></li>
+                        <li><a href="##"><i class="fas fa-hand-holding-heart"></i>Valentine</a></li>
+                      </ul>
+                  </a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="col-md-12"><a href="#">Liên hệ</a></li>
+              <li class="col-md-12"><a href="#">Tìm kiếm</a></li>
+              <li class="col-md-12"><a href="#">Tài khoản</a>
+              </ul>
+          </nav>
+        </div>
+    </div>
+    <div style="width:100%; height:20px"></div>
+  </div>
+    <!-- Login -->
+    <div class="bg-image"></div>
+    <form class="px-4 py-3 login">
+      <div class="form-group">
+        <label for="exampleDropdownFormEmail1">Email address</label>
+
+        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleDropdownFormPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="dropdownCheck">
+          <label class="form-check-label" for="dropdownCheck">
+            Remember me
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Sign in</button><br><br>
+      <a class="dropdown-item note" href="#">New around here? Sign up</a>
+      <a class="dropdown-item note" href="#">Forgot password?</a>
+    </form>
+    <!-- End -->
+    <footer>
+    <div class="container">
+        <div class="row" style="align-items: center;flex-direction:row;color:white;">
+
+            <div class="col-md-4 col-sm-12" style="overflow:hidden;max-width: 500px;">
+                <p style="text-align: center">Địa Chỉ: Số 8 Tôn Thất Thuyết - Mỹ Đình - Hà Nội</p>
+                <!-- <div class="container-fluid" style="justify-content: center; border:1px solid white"> -->
+
+                <img src="https://upload.wikimedia.org/wikipedia/vi/1/1a/Vietnam_Timeless_Charm.PNG?fbclid=IwAR2mOujafWKK2M2FLBhKCKxY0NfqmrhgGxZKDIQ6M1hdolfQt8cwosZqMZQ"
+                  class="img-fluid" style="background-color: white; border-radius:50%"/>
+                <!-- </div> -->
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <ul>
+                    <li><a href="#" class="bot">Cổ truyền</a></li>
+                    <li><a href="#" class="bot">Thể thao</a></li>
+                    <li><a href="#" class="bot">Ánh sáng</a></li>
+                    <li><a href="#" class="bot">Âm nhạc</a></li>
+                    <li><a href="#" class="bot">Phật giáo</a></li>
+                    <li><a href="#" class="bot">Thiên Chúa giáo</a></li>
+                    <li><a href="#" class="bot">Hiện đại</a></li>
+                    <li><a href="#" class="bot">Công nghệ</a></li>
+                    <li><a href="#" class="bot">Thời trang</a></li>
+                    <li><a href="#" class="bot">Khác</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-sm-12" style="border: none">
+                <p>face, g+</p>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <!-- <div class="row">
+        <div class="col-md-12 col-sm-12" style="color: #ffffff"> -->
+            <div style="text-align: center;color:white">Cảm ơn các bạn đã ủng hộ trang web của chúng tôi, hãy đến và tận
+                hưởng
+                hương vị lễ hội Việt
+                Nam ngay thôi</div>
+        </div>
+        <!-- </div> -->
+
+    </div>
+    <footer>
+
+</body>
+</html>
