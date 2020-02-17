@@ -1,0 +1,32 @@
+
+.col-md-6 img {
+        margin: 10px;
+        height: 350px;
+      }
+  /* Thân Web */
+
+.col-md-6{
+  display: flex;
+  justify-content:center;
+}
+
+.col-md-6 ul li a{
+      padding:10px;
+      margin:10px ;
+      line-height: 30px;
+      border:1px solid white;
+      border-radius: 5%;
+      color: white;
+
+    }
+.col-md-2 p{
+      text-align: center;
+    }
+.col-sm-5 {
+  overflow:hidden;
+  width: 500px;
+  border-right:1px solid white
+}
+.col-md-6 {
+  border-right:1px solid white
+}
