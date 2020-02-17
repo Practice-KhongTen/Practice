@@ -1,0 +1,35 @@
+/* Footer */
+footer .col-md-2 {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+footer .col-md-2 a{
+display: flex;
+margin-top: 15px;
+justify-content: center;
+}
+.col-sm-12 ul li a {
+margin-left:5px
+}
+.col-sm-12 ul li a:hover {
+  color: red
+}
+
+footer {
+width: 100%;
+height: 100%;
+background: black;
+font-weight: bold;
+}
+
+footer .col-sm-12 {
+border: none;
+justify-content: center;
+display: flex
+}
+
+.col-sm-12 a i {
+ color: white;
+ font-size: 20px
+}

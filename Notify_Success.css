@@ -1,0 +1,10 @@
+body {
+      text-align: center;
+      color: black;
+    }
+.next{
+  background-color: #B2D4E3;
+  width: 80px;
+  height: 30px;
+  border: none;
+}
