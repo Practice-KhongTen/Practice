@@ -36,8 +36,11 @@ button:hover {
 .cancelbtn {
   padding: 14px 20px;
   background-color: #f44336;
+  color: black;
 }
-
+.cancelbtn:hover {
+  color: #ffffff;
+}
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
   float: left;
@@ -66,6 +69,18 @@ button:hover {
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
+.signup {
+  background-color: #62c365;
+  text-align: center;
+  width: 50%;
+  height: 52px;
+  float: right;
+  padding-top: 12px;
+  margin-top: 8px;
+}
+.signup:hover {
+  background-color: #70BF73;
+}
 /* Style the horizontal ruler */
 hr {
   border: 1px solid #f1f1f1;
@@ -76,11 +91,11 @@ hr {
 .clearfix{
   margin-bottom: 10px;
 }
-/* .clearfix::after {
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
-} */
+}
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
