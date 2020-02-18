@@ -2,6 +2,9 @@ h1 {
   color: red;
   font-weight: bold;
 }
+h3 {
+  text-align: center;
+}
   /* Thân Web */
 
 
@@ -17,11 +20,7 @@ h1 {
 .col-md-2 p{
       text-align: center;
     }
-.col-sm-5 {
-  overflow:hidden;
-  width: 500px;
-  border-right:1px solid white
-}
+
 .col-md-6 {
   border-right:1px solid white
 }
@@ -31,6 +30,9 @@ h1 {
 .btn a:hover {
   color: white
 }
-.row .col-md-4 iframe:hover {
-  border: 1px solid rgb(40, 167, 212)
+iframe:hover {
+  border: 1px solid rgb(40, 167, 212) !important
+}
+ul li img {
+  height: 200px !important
 }
