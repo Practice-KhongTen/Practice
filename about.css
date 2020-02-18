@@ -37,3 +37,6 @@
 iframe:hover {
   border: 1px solid rgb(40, 167, 212)
 }
+h3 {
+  text-align: center;
+}
