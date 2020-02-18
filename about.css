@@ -1,10 +1,9 @@
-
-  /* Thân Web */
-  .col-md-3 {
+/* Thân Web */
+  .col-lg-3 {
   text-align: center;
   flex-direction: column;
   }
-  .col-md-3 i{
+  .col-lg-3 i{
   width:100%;
   color: rgb(38, 204, 196)
   }
