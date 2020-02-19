@@ -31,8 +31,11 @@ h3 {
   color: white
 }
 iframe:hover {
-  border: 1px solid rgb(40, 167, 212) !important
+  border: 1px solid rgb(40, 167, 212) !important;
 }
 ul li img {
-  height: 200px !important
+  height: 200px !important;
+}
+.col-md-8 img {
+  height: 500px !important
 }
